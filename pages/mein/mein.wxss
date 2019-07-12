@@ -1,0 +1,22 @@
+/* pages/mein/mein.wxss */
+.header-view {
+  display: flex;
+  justify-content: space-around
+}
+.headerImg {
+  margin-left: 20px;
+  height: 80px;
+  width: 80px;
+}
+.leassonImgs {
+  width: 80px;
+  height: 80px;
+  margin-top: -140px;
+  margin-left: calc((100vw - 80px )/2);
+  position: absolute
+}
+.login-btn { 
+  margin-top: 17.5px;
+  width: 100px;
+  height: 45px;
+}

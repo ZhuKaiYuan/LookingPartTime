@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/target/target",
+    "pages/mein/mein"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#F4EB0D",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "主页",
+        "iconPath": "pages/resources/home.png",
+        "selectedIconPath": "pages/resources/home_slt.png"
+      },
+      {
+        "pagePath": "pages/target/target",
+        "text": "领班",
+        "iconPath": "pages/resources/target.png",
+        "selectedIconPath": "pages/resources/target_slt.png"
+      },
+      {
+        "pagePath": "pages/mein/mein",
+        "text": "个人中心",
+        "iconPath": "pages/resources/mein.png",
+        "selectedIconPath": "pages/resources/mein_slt.png"
+      }
+    ]
+  }
+}

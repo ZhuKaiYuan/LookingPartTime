@@ -1,0 +1,12 @@
+<i-cell-group>
+  <view class='header-view'>
+    <image style="background-color: #545342;" src="{{image1}}" class='headerImg'></image>
+    <button class='login-btn' bindtap='login'>登录</button>
+  </view>
+    <i-cell title="提醒设置" is-link></i-cell>
+    <i-cell title="我要评价" is-link url="/pages/dashboard/index"></i-cell>
+    <i-cell title="帮助反馈" is-link url="/pages/dashboard/index"></i-cell>
+    <i-cell title="关于我们" is-link url="/pages/dashboard/index"></i-cell>
+</i-cell-group>
+
+ <!-- <image style="background-color: #545342;" src="{{image1}}" class='leassonImg' ><image style="opacity:{{number}};background-color: #ff4500;" src="../resources/头像.jpg" class='leassonImgs' ></image></image> -->
