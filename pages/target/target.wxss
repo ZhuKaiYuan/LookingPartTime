@@ -9,8 +9,15 @@
   box-sizing: border-box;
   padding: 10px 12px 0 12px;
 }
-
-
+.mianList{
+  padding:0 20px;
+  margin-bottom:15px;
+  background:#eee;
+  overflow:hidden;
+}
+.mainCard{
+  margin:20px;
+}
 
 
 
