@@ -1,35 +1,25 @@
-// pages/mein/mein.js
-var getData = require('../../data/target.js').detailsList;
+// pages/target/detail/detail.js
 Page({
+
   /**
    * 页面的初始数据
    */
-  data:{
-    targetList: []
+  data: {
 
-  },
-
-  itemDidClick: function(e) {
-    console.log("跳转")
-    wx.navigateTo({
-      url: '../target/detail/detail',
-    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady(){
-    this.setData({
-      targetList: getData
-    })
+  onReady: function () {
+
   },
 
   /**
@@ -43,7 +33,7 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-    
+
   },
 
   /**

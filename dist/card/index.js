@@ -8,7 +8,7 @@ Component({
     properties: {
         full: {
             type: Boolean,
-            value: true
+            value: false
         },
         thumb: {
             type: String,

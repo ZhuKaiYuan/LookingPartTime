@@ -2,7 +2,8 @@
   "pages": [
     "pages/home/home",
     "pages/target/target",
-    "pages/mein/mein"
+    "pages/mein/mein",
+    "pages/target/detail/detail"
   ],
   "window": {
     "backgroundTextStyle": "light",

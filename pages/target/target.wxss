@@ -1,7 +1,15 @@
 
-
-
-
+.targetView{
+  top: 8px;
+  display: flex;
+  justify-content: center
+}
+.btn{
+  left: 10px;
+  top: 0px;
+  width: 100vw-30px;
+  height: 180px
+}
 
 
 
