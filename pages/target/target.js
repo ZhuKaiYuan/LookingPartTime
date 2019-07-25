@@ -5,33 +5,15 @@ Page({
    * 页面的初始数据
    */
   data:{
-    targetList: [],
-    // name: "董星照",
-    // imgUrl: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562838562898&di=2d59f596f4231d16918edd0457356bf5&imgtype=0&src=http%3A%2F%2Fwww.cnlogo8.com%2Fimg%2F201606%2Fcnlogo8klrthdykwxq.png",
-    // position: "董事长",
-    // title: "首次董事会会议",
-    // content: "地点:郑东新区CBD-5层-568 时间2019-07-08 14:00"
-    
+    targetList: []
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // var arr = []
-    // for (var i = 0; i < getData.detailsList.length; i++) {
-    //   arr.push({
-    //     name: getData.detailsList[i].name,
-    //     imgUrl: getData.detailsList[i].imgUrl,
-    //     position: getData.detailsList[i].position,
-    //     title: getData.detailsList[i].title,
-    //     content: getData.detailsList[i].content,
-    //   })
-    // }
-    // console.log(arr)
-    // this.setData({
-    //   targetList: getData.detailsList
-    // })
+    
   },
 
   /**
