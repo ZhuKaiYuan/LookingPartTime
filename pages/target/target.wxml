@@ -1,32 +1,20 @@
 
-  <!-- <i-card i-class='leassonListOut' wx:for="{{leassonList}}" title="{{name}}" extra="{{position}}" thumb="{{imgUrl}}">
-    <view slot="content">{{title}}</view>
-    <view slot="footer">{{content}}</view>
-  </i-card> -->
 
-<view wx:for="{{targetList}}" wx:key="{{item.id}}"> 
-  <i-card title="{{name}}" extra="{{position}}" thumb="{{imgUrl}}">
-    <view slot="content">{{title}}</view>
-    <view slot="footer">{{content}}</view>
+<!-- <view wx:for="{{targetList}}" wx:key="{{itme.id}}"> 
+  <i-card data-id="{{itme.id}}" title="{{itme.name}}" extra="{{itme.position}}" thumb="{{itme.imgUrl}}">
+    <view slot="content">{{itme.title}}</view>
+    <view slot="footer">{{itme.content}}</view>
+  </i-card>
+</view> -->
+
+<view wx:for="{{targetList}}" wx:key="index"> 
+  <i-card title="{{item.name}}" extra="{{item.position}}" thumb="{{item.imgUrl}}">
+    <view slot="content">{{item.title}}</view>
+    <view slot="footer">{{item.content}}</view>
   </i-card>
 </view>
 
-<!-- <i-card wx:for="{{targetList}}" wx:key="{{item}}" title="{{itme.name}}" extra="{{itme.position}}" thumb="{{itme.imgUrl}}">
-    <view slot="content">{{itme.title}}</view>
-    <view slot="footer">{{itme.content}}</view>
-</i-card> -->
 
-<!-- 
-<block wx:for="{{targetList}}" wx:key="{{item.id}}">
-  <i-card title="{{itme.name}}" extra="{{itme.position}}" thumb="{{itme.imgUrl}}">
-      <view slot="content">{{itme.title}}</view>
-      <view slot="footer">{{itme.content}}</view>
-  </i-card>
-</block> -->
-
-  <!-- <i-card title="{{name}}" extra="{{position}}" thumb="{{imgUrl}}">
-    <view slot="content">{{title}}</view>
-    <view slot="footer">{{content}}</view>
-  </i-card> -->
+  
 
 

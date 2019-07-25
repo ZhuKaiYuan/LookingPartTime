@@ -13,8 +13,8 @@
 		"coverView": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.7.0",
-	"appid": "wx139b9e528a8f1c31",
+	"libVersion": "2.7.4",
+	"appid": "wx0f350ce8bcf5c3bf",
 	"projectname": "LookingPartTime-hnfcrl",
 	"debugOptions": {
 		"hidedInDevtools": []

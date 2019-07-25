@@ -2,7 +2,7 @@
 <i-cell-group>
 <swiper indicator-dots="{{indicatorDots}}"
   autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" indicator-color= "rgba(255, 255, 255, .5)" indicator-active-color="{{indicatorActiveColor}}" circular='true'> 
-  <block wx:for="{{imgUrls}}">
+  <block wx:for="{{imgUrls}}" wx:key="index">
     <swiper-item>
       <image src="{{item}}" class='scorll_image'/>
     </swiper-item>
@@ -15,7 +15,7 @@
 <button class='btn3{{actIndex=="third"?"actColor":""}}' id='third' bindtap="changeMenu">职场</button>
 </view>
 
- <view class='leassonListOut' wx:for="{{leassonList}}" wx:key="{{item.id}}">
+ <view class='leassonListOut' wx:for="{{leassonList}}" wx:key="item.id">
       <view class='leassonList' data-id="{{item.id}}"  bindtap="seeDetail">
         <view class='listIn'>
           <view class='leassonImg'>

@@ -14,60 +14,61 @@ Page({
     author:"啥啥啥娜娜",
     money: "100"
   },
-
-  changeMenu: function (e) {
-    this.setData({
-      actIndex: e.currentTarget.id
-    })
-    if (this.data.actIndex == 'first') {
-      var arr = []
-      for (var i = 0; i < getData.detailList.length; i++) {
-        console.log(getData.detailList[i].leassonType)
-        if (getData.detailList[i].leassonType == 1) {
-          arr.push({
-            id: getData.detailList[i].id,
-            imgUrl: getData.detailList[i].imgUrl,
-            title: getData.detailList[i].title,
-            leassonType: getData.detailList[i].leassonType,
-          })
-        }
-      }
+  methods:{
+    changeMenu: function (e) {
       this.setData({
-        leassonList: arr.reverse()
+        actIndex: e.currentTarget.id
       })
-    } else if (this.data.actIndex == 'second') {
-      var arr = []
-      for (var i = 0; i < getData.detailList.length; i++) {
-        console.log(getData.detailList[i].leassonType)
-        if (getData.detailList[i].leassonType == 2) {
-          arr.push({
-            id: getData.detailList[i].id,
-            imgUrl: getData.detailList[i].imgUrl,
-            title: getData.detailList[i].title,
-            leassonType: getData.detailList[i].leassonType,
-          })
+      if (this.data.actIndex == 'first') {
+        var arr = []
+        for (var i = 0; i < getData.detailList.length; i++) {
+          console.log(getData.detailList[i].leassonType)
+          if (getData.detailList[i].leassonType == 1) {
+            arr.push({
+              id: getData.detailList[i].id,
+              imgUrl: getData.detailList[i].imgUrl,
+              title: getData.detailList[i].title,
+              leassonType: getData.detailList[i].leassonType,
+            })
+          }
         }
-      }
-      this.setData({
-        leassonList: arr.reverse()
-      })
-    } else if (this.data.actIndex == 'third') {
-      var arr = []
-      for (var i = 0; i < getData.detailList.length; i++) {
-        console.log(getData.detailList[i].leassonType)
-        if (getData.detailList[i].leassonType == 3) {
-          arr.push({
-            id: getData.detailList[i].id,
-            imgUrl: getData.detailList[i].imgUrl,
-            title: getData.detailList[i].title,
-            leassonType: getData.detailList[i].leassonType,
-          })
+        this.setData({
+          leassonList: arr.reverse()
+        })
+      } else if (this.data.actIndex == 'second') {
+        var arr = []
+        for (var i = 0; i < getData.detailList.length; i++) {
+          console.log(getData.detailList[i].leassonType)
+          if (getData.detailList[i].leassonType == 2) {
+            arr.push({
+              id: getData.detailList[i].id,
+              imgUrl: getData.detailList[i].imgUrl,
+              title: getData.detailList[i].title,
+              leassonType: getData.detailList[i].leassonType,
+            })
+          }
         }
+        this.setData({
+          leassonList: arr.reverse()
+        })
+      } else if (this.data.actIndex == 'third') {
+        var arr = []
+        for (var i = 0; i < getData.detailList.length; i++) {
+          console.log(getData.detailList[i].leassonType)
+          if (getData.detailList[i].leassonType == 3) {
+            arr.push({
+              id: getData.detailList[i].id,
+              imgUrl: getData.detailList[i].imgUrl,
+              title: getData.detailList[i].title,
+              leassonType: getData.detailList[i].leassonType,
+            })
+          }
+        }
+        this.setData({
+          leassonList: arr.reverse()
+        })
       }
-      this.setData({
-        leassonList: arr.reverse()
-      })
-    }
+    },
   },
   onLoad: function () {
     console.log(getData)

@@ -8,7 +8,7 @@ Component({
     properties: {
         full: {
             type: Boolean,
-            value: false
+            value: true
         },
         thumb: {
             type: String,
@@ -22,5 +22,13 @@ Component({
             type: String,
             value: ''
         }
-    }
+    },
+    data(){
+      return{
+
+      }
+    },
+  created(){
+    console.log(this.title);
+  }
 });

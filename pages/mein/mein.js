@@ -6,14 +6,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    // number: 1,
     image1: "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1562393313830&di=4750eee1ded2dabbe3841238c3924d89&imgtype=0&src=http%3A%2F%2Fcdnq.duitang.com%2Fuploads%2Fitem%2F201408%2F12%2F20140812132039_WWCQZ.jpeg",
-    // image2: "pages/resourse/头像"
 
   },
-  // login:function {
-  //   console(登录)
-  // },
+  loginClick: function(e) {
+    console.log("登录")
+  },
 
   /**
    * 生命周期函数--监听页面加载
