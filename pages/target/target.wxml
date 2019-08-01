@@ -1,8 +1,22 @@
 
-<view class='targetView' wx:for="{{targetList}}" wx:key="index"> 
+
+<!-- <view class='targetView' wx:for="{{targetList}}" wx:key="index"> 
   <i-card title="{{item.name}}" extra="{{item.position}}" thumb="{{item.imgUrl}}">
     <view slot="content">{{item.title}}</view>
-    <view slot="footer">{{item.content}}</view>
+    <view slot="footer">{{item.content}}</view> -->
+
+
+<!-- <view wx:for="{{targetList}}" wx:key="{{itme.id}}"> 
+  <i-card data-id="{{itme.id}}" title="{{itme.name}}" extra="{{itme.position}}" thumb="{{itme.imgUrl}}">
+    <view slot="content">{{itme.title}}</view>
+    <view slot="footer">{{itme.content}}</view>
+  </i-card>
+</view> -->
+
+<view class="mianList"> 
+  <i-card title="{{item.name}}" extra="{{item.position}}" thumb="{{item.imgUrl}}" wx:for="{{targetList}}" wx:key="index" class="mainCard">
+    <view slot="content" class="nameTitle">{{item.title}}</view>
+    <view slot="footer" class="testps">{{item.content}}</view>
   </i-card>
   <button class='btn' bindtap='itemDidClick'>跳转</button>
 </view>
