@@ -1,10 +1,10 @@
 <i-cell-group>
   <view class='header-view'>
     <image style="background-color: #545342;" src="{{image1}}" class='headerImg'></image>
-    <button class='login-btn' bindtap="loginClick">登录</button>
   </view>
     <i-cell title="提醒设置" is-link></i-cell>
     <i-cell title="我要评价" is-link url="/pages/dashboard/index"></i-cell>
     <i-cell title="帮助反馈" is-link url="/pages/dashboard/index"></i-cell>
     <i-cell title="关于我们" is-link url="/pages/dashboard/index"></i-cell>
+    <button class='login-btn loginFloat' bindtap="loginClick">登录</button>
 </i-cell-group>

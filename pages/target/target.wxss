@@ -1,3 +1,33 @@
+.positionView{
+  width:100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  background: lightgray;
+  z-index:10;
+}
+.postionlines{
+  width: 80%;
+  height:80rpx;
+}
+.subView{
+  width:33.33%;
+  height:80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.borderline{
+  border-right:2rpx solid #fff;
+}
+.lineView{
+  width: 2rpx;
+  height: 30rpx;
+  line-height: 80rpx;
+  background: white;
+}
 
 .leassonListOut{
   width: 100%;
