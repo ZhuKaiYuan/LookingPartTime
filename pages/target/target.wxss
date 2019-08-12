@@ -1,3 +1,33 @@
+.positionView{
+  width:100%;
+  position: fixed;
+  top: 0;
+  left:0;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-around;
+  background: lightgray;
+  z-index:10;
+}
+.postionlines{
+  width: 80%;
+  height:80rpx;
+}
+.subView{
+  width:33.33%;
+  height:80rpx;
+  text-align: center;
+  line-height: 80rpx;
+}
+.borderline{
+  border-right:2rpx solid #fff;
+}
+.lineView{
+  width: 2rpx;
+  height: 30rpx;
+  line-height: 80rpx;
+  background: white;
+}
 
 .targetView{
   top: 8px;
@@ -24,7 +54,7 @@
   overflow:hidden;
   text-overflow:ellipsis;
   white-space: nowrap;
-  }
+}
 .testps{
   width:450rpx;
   overflow : hidden;
@@ -34,5 +64,77 @@
   -webkit-box-orient: vertical;
 }
 
+/* .mianList{
+  padding:0 20px;
+  margin-bottom:15px;
+  background:#eee;
+  overflow:hidden;
+}
+.mainCard{
+  margin:20px;
+}
+.nameTitle{
+  width:200rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  }
+.testps{
+  width:450rpx;
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;     
+  -webkit-box-orient: vertical;
+} */
+
+
+.leassonListOut{
+  width: 100%;
+}
+.leassonList{
+  width: 100%;
+  height: 100px;
+  box-sizing: border-box;
+  padding: 10px 12px 0 12px;
+}
+.listIn{
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #f5f5f5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+.leassonImg{
+  flex: 0 0 100px;
+  height: 80px;
+  margin-right: 16px;
+}
+.leassonImgs{
+  width: 100%;
+  height: 80px;
+}
+.leassonTitle{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
+}
+.leassonTitle .title{
+  font-size: 16px;
+  color: #595959;
+}
+.leassonTitle .author{
+  font-size: 12px;
+  color: #595959;
+}
+
+.leassonTitle .money{
+  font-size: 14px;
+  color: #ff4500;
+}
 
 
