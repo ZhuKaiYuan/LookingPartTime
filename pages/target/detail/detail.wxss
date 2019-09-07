@@ -1,0 +1,21 @@
+/* pages/target/detail/detail.wxss */
+.detailMessage{
+  padding:24rpx;
+  height:auto;
+}
+.detailTitles{
+  height:50rpx;
+  line-height:50rpx;
+  font-size:36rpx;
+  color:#f32525;
+}
+.detailContent{
+  line-height:40rpx;
+  font-size:28rpx;
+  color:#333;
+  text-align:justify;
+}
+  .btnView{
+    display: flex;
+    justify-content: space-between;
+  }

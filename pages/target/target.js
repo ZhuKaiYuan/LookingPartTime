@@ -1,12 +1,22 @@
 // pages/mein/mein.js
-var getData = require('../../data/target.js').detailsList;
+var getData = require('../../data/data.js');
 Page({
   /**
    * 页面的初始数据
    */
   data:{
-    targetList: []
-    
+    targetList: [],
+    interval: 5000,
+    duration: 1000,
+    author: "啥啥啥娜娜",
+    money: "100"
+  },
+
+  seeDetail: function(e) {
+    console.log("跳转")
+    wx.navigateTo({
+      url: '../target/detail/detail',
+    })
   },
 
   positionClick: function(e) {
@@ -19,7 +29,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+    console.log(getData)
+    var arr = []
+    for (var i = 0; i < getData.detailList.length; i++) {
+      console.log(getData.detailList[i].leassonType)
+      if (getData.detailList[i].leassonType == 1) {
+        arr.push({
+          id: getData.detailList[i].id,
+          imgUrl: getData.detailList[i].imgUrl,
+          title: getData.detailList[i].title,
+          leassonType: getData.detailList[i].leassonType,
+        })
+      }
+    }
+    this.setData({
+      imgUrls: getData.bannerList,
+      leassonList: arr.reverse()
+    })
   },
 
   /**

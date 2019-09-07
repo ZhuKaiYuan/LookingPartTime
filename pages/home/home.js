@@ -14,6 +14,12 @@ Page({
     author:"啥啥啥娜娜",
     money: "100"
   },
+  seeDetail: function (e) {
+    console.log("跳转")
+    wx.navigateTo({
+      url: '../target/detail/detail',
+    })
+  },
   methods:{
     changeMenu: function (e) {
       this.setData({
